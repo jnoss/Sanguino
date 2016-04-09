@@ -96,6 +96,30 @@ atmega644p_8m.build.variant=sanguino
 
 ##############################################################
 
+atmega644p_8m_9600.name=Sanguino W/ ATmega644P or ATmega644PA (8 MHz, 9600)
+
+atmega644p_8m_9600.upload.maximum_size=64512
+atmega644p_8m_9600.upload.maximum_data_size=4096
+
+atmega644p_8m_9600.upload.protocol=arduino
+atmega644p_8m_9600.upload.speed=9600
+atmega644p_8m_9600.bootloader.path=optiboot
+atmega644p_8m_9600.bootloader.file=optiboot_atmega644p_8m.hex
+
+atmega644p_8m_9600.bootloader.low_fuses=0xFF
+atmega644p_8m_9600.bootloader.high_fuses=0xDE
+atmega644p_8m_9600.bootloader.extended_fuses=0xFD
+atmega644p_8m_9600.bootloader.unlock_bits=0x3F
+atmega644p_8m_9600.bootloader.lock_bits=0x0F
+
+atmega644p_8m_9600.build.mcu=atmega644p
+atmega644p_8m_9600.build.f_cpu=8000000L
+atmega644p_8m_9600.build.board=AVR_SANGUINO
+atmega644p_8m_9600.build.core=arduino:arduino
+atmega644p_8m_9600.build.variant=sanguino
+
+##############################################################
+
 atmega1284p.name=Sanguino W/ ATmega1284 or ATmega1284P (16MHz)
 
 atmega1284p.upload.maximum_size=130048
